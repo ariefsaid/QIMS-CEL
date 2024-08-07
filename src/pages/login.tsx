@@ -20,32 +20,34 @@ const LoginPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <form onSubmit={handleLogin} className="p-8 bg-white rounded shadow-md w-96">
-        <h2 className="mb-4 text-2xl font-bold">Login</h2>
-        <div className="mb-4">
-          <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-700">Email</label>
-          <input
-            id="email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-          />
-        </div>
-        <div className="mb-6">
-          <label htmlFor="password" className="block mb-2 text-sm font-bold text-gray-700">Password</label>
-          <input
-            id="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-          />
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">
-            Sign In
-          </button>
-        </div>
+        <fieldset>
+          <legend className="mb-4 text-2xl font-bold">Login</legend>
+          <div className="mb-4">
+            <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-700">Email</label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div className="mb-6">
+            <label htmlFor="password" className="block mb-2 text-sm font-bold text-gray-700">Password</label>
+            <input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div className="flex items-center justify-between">
+            <button type="submit" className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+              Sign In
+            </button>
+          </div>
+        </fieldset>
       </form>
     </div>
   );

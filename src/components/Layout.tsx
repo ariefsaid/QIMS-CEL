@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link'; // Added import
+import Link from 'next/link';
 import Navbar from './Navbar';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
