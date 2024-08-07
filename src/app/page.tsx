@@ -59,7 +59,7 @@ export default function Home() {
               Everything you need to run your books.
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Well everything you need if you aren't that picky about minor details like tax compliance.
+              Well everything you need if you aren\'t that picky about minor details like tax compliance.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -86,7 +86,7 @@ export default function Home() {
               </p>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-              It doesn't matter what size your business is, our software won't work well for you.
+              It doesn\'t matter what size your business is, our software won\'t work well for you.
             </p>
             {/* Add pricing tiers here */}
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
             <div className="lg:col-span-5">
               <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
               <p className="mt-4 text-base leading-7 text-gray-600">
-                If you can't find what you're looking for, email our support team and if you're lucky someone will get back to you.
+                If you can\'t find what you\'re looking for, email our support team and if you\'re lucky someone will get back to you.
               </p>
             </div>
             <div className="mt-10 lg:col-span-7 lg:mt-0">
