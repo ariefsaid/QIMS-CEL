@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
+  // Add 'use client' directive at the top of the file
+  'use client';
   return (
     <div className="bg-white">
       <main>
@@ -13,10 +15,10 @@ export default function Home() {
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   <span className="text-gray-600">
                     Announcing our next round of funding.{' '}
-                    <a href="#" className="font-semibold text-indigo-600">
+                    <Link href="#" className="font-semibold text-indigo-600">
                       <span className="absolute inset-0" aria-hidden="true" />
                       Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </div>
