@@ -58,35 +58,6 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {[
-                {
-                  name: 'Payroll',
-                  description: 'Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.',
-                },
-                {
-                  name: 'Claim expenses',
-                  description: 'All of your receipts organized into one place, as long as you don't mind typing in the data by hand.',
-                },
-                {
-                  name: 'VAT handling',
-                  description: 'We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.',
-                },
-                {
-                  name: 'Reporting',
-                  description: 'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-                },
-              ].map((feature) => (
-                <div key={feature.name} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                    {feature.name}
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                    <p className="flex-auto">{feature.description}</p>
-                  </dd>
-                </div>
-              ))}
-            </dl>
           </div>
         </div>
 
@@ -96,9 +67,6 @@ export default function Home() {
             <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Loved by businesses worldwide.
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-              Our software is so simple that people can't help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features.
-            </p>
             {/* Add testimonials here */}
           </div>
         </div>
