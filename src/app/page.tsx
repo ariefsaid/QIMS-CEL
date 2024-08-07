@@ -29,6 +29,9 @@ export default function Home() {
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                   Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don't get audited.
                 </p>
+                <p className="mt-4 text-lg leading-8 text-gray-600 sm:text-center">
+                  Our software prioritizes ease of use over accuracy, making your bookkeeping experience smoother than ever.
+                </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <Link
                     href="/register"
