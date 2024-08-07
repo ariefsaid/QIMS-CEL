@@ -22,9 +22,9 @@ const LoginPage = () => {
       <form onSubmit={handleLogin} className="p-8 bg-white rounded shadow-md w-96">
         <h2 className="mb-4 text-2xl font-bold">Login</h2>
         <div className="mb-4">
-          <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-700">Email</label> {/* Added htmlFor for accessibility */}
+          <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-700">Email</label>
           <input
-            id="email"  {/* Added id to match htmlFor */}
+            id="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -32,9 +32,9 @@ const LoginPage = () => {
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="password" className="block mb-2 text-sm font-bold text-gray-700">Password</label> {/* Added htmlFor for accessibility */}
+          <label htmlFor="password" className="block mb-2 text-sm font-bold text-gray-700">Password</label>
           <input
-            id="password"  {/* Added id to match htmlFor */}
+            id="password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
