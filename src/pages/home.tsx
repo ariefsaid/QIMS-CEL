@@ -30,8 +30,10 @@ export default function Home() {
             <li>Adapt Quickly</li>
           </ul>
 
-          <Link href="/login" className="mt-4 px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">
-            Login
+          <p>QIMS is more than just software; it's your partner in quality assurance. Join the future of inspection management today!</p>
+
+          <Link href="/dashboard" className="mt-4 px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+            Go to Dashboard
           </Link>
         </div> {/* Closing the wrapping div */}
       </div>
