@@ -4,16 +4,16 @@ import Link from 'next/link';
    return (                                                                                                                                         
      <nav className="flex items-center justify-between p-4 bg-blue-500">                                                                            
        <div className="text-white">                                                                                                                 
-         <Link href="/dashboard">                                                                                                                   
-           <a className="text-lg font-bold">QIMS</a>                                                                                                
+         <Link href="/" className="text-lg font-bold">                                                                                                                   
+           QIMS                                                                                                
          </Link>                                                                                                                                    
        </div>                                                                                                                                       
        <div className="flex space-x-4 text-white">                                                                                                  
          <Link href="/dashboard">                                                                                                                   
-           <a>Dashboard</a>                                                                                                                         
+           Dashboard                                                                                                                         
          </Link>                                                                                                                                    
          <Link href="/profile">                                                                                                                     
-           <a>Profile</a>                                                                                                                           
+           Profile                                                                                                                       
          </Link>                                                                                                                                    
        </div>                                                                                                                                       
      </nav>                                                                                                                                         
