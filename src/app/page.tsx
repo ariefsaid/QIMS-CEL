@@ -1,49 +1,141 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white">
-
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-blue-900 mb-4">QIMS: Quality Inspection Management System</h1>
-          <p className="text-xl text-gray-600">Revolutionizing quality inspection processes across industries</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-semibold text-blue-800 mb-4">Key Features</h2>
-            <ul className="space-y-2">
-              {['Mobile-Optimized Inspections', 'Real-Time Project Tracking', 'Comprehensive Reporting', 'Asset Management', 'Seamless Integration'].map((feature, index) => (
-                <li key={index} className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  {feature}
-                </li>
-              ))}
-            </ul>
+    <div className="bg-white">
+      <main>
+        {/* Hero section */}
+        <div className="px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+            <div>
+              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <span className="text-gray-600">
+                    Announcing our next round of funding.{' '}
+                    <a href="#" className="font-semibold text-indigo-600">
+                      <span className="absolute inset-0" aria-hidden="true" />
+                      Read more <span aria-hidden="true">&rarr;</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+                  Accounting made simple for small businesses.
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+                  Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don't get audited.
+                </p>
+                <div className="mt-8 flex gap-x-4 sm:justify-center">
+                  <Link
+                    href="/register"
+                    className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                  >
+                    Get 6 months free
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                  >
+                    Watch video
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-semibold text-blue-800 mb-4">Why Choose QIMS?</h2>
-            <ul className="space-y-2">
-              {['Boost Efficiency', 'Enhance Accuracy', 'Improve Visibility', 'Increase Collaboration', 'Adapt Quickly'].map((reason, index) => (
-                <li key={index} className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  {reason}
-                </li>
+        </div>
+
+        {/* Feature section */}
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-base font-semibold leading-7 text-indigo-600">Everything you need</h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Everything you need to run your books.
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Well everything you need if you aren't that picky about minor details like tax compliance.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              {[
+                {
+                  name: 'Payroll',
+                  description: 'Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.',
+                },
+                {
+                  name: 'Claim expenses',
+                  description: 'All of your receipts organized into one place, as long as you don't mind typing in the data by hand.',
+                },
+                {
+                  name: 'VAT handling',
+                  description: 'We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.',
+                },
+                {
+                  name: 'Reporting',
+                  description: 'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+                },
+              ].map((feature) => (
+                <div key={feature.name} className="flex flex-col">
+                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                    {feature.name}
+                  </dt>
+                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                    <p className="flex-auto">{feature.description}</p>
+                  </dd>
+                </div>
               ))}
-            </ul>
+            </dl>
           </div>
         </div>
 
-        <div className="text-center">
-        <Link href="/dashboard" className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
-          Explore Dashboard
-        </Link>
+        {/* Testimonial section */}
+        <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+            <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Loved by businesses worldwide.
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
+              Our software is so simple that people can't help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features.
+            </p>
+            {/* Add testimonials here */}
+          </div>
         </div>
 
+        {/* Pricing section */}
+        <div className="py-24 sm:pt-48">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+              <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Simple pricing, for everyone.
+              </p>
+            </div>
+            <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+              It doesn't matter what size your business is, our software won't work well for you.
+            </p>
+            {/* Add pricing tiers here */}
+          </div>
+        </div>
+
+        {/* FAQ section */}
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div className="lg:col-span-5">
+              <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+              <p className="mt-4 text-base leading-7 text-gray-600">
+                If you can't find what you're looking for, email our support team and if you're lucky someone will get back to you.
+              </p>
+            </div>
+            <div className="mt-10 lg:col-span-7 lg:mt-0">
+              <dl className="space-y-10">
+                {/* Add FAQ items here */}
+              </dl>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
