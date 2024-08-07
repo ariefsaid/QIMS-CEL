@@ -6,7 +6,7 @@ export default function Home() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <h1 className="text-4xl font-bold text-center">QIMS: Revolutionizing Quality Inspection Management</h1>
         <p className="text-xl text-center">Streamline Your Inspection Processes</p>
-        <p>QIMS is a cutting-edge, mobile-first platform designed to transform how companies manage quality inspections across Indonesia. Our system empowers inspectors, project managers, and executives with real-time data and powerful tools.</p>
+<p>QIMS is a cutting-edge, mobile-first platform designed to transform how companies manage quality inspections across Indonesia. Our system empowers inspectors, project managers, and executives with real-time data and powerful tools.</p>
         
         <h2 className="text-2xl font-bold">Key Features:</h2>
         <ul className="list-disc list-inside">
