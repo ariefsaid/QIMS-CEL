@@ -1,9 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
-  // Add 'use client' directive at the top of the file
-  'use client';
   return (
     <div className="bg-white">
       <main>
