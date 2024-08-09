@@ -2,11 +2,16 @@ import useAuth from '../hooks/useAuth';
                                                                                                                                                     
  const withAuth = (Component: React.ComponentType) => {                                                                                             
    const Auth = (props: any) => {                                                                                                                   
-     const router = useRouter();                                                                                                                    
-                                                                                                                                                    
-    useAuth();
-                                                                                                                                                    
-     return <Component {...props} />;                                                                                                               
+    const { user } = useAuth();
+    const router = useRouter();
+
+    useEffect(() => {
+      if (!user) {
+        router.push('/login');
+      }
+    }, [user, router]);
+
+    return user ? <Component {...props} /> : null;
    };                                                                                                                                               
                                                                                                                                                     
    return Auth;                                                                                                                                     
