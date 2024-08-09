@@ -24,4 +24,4 @@ import { useEffect } from 'react';
    return Auth;                                                                                                                                     
  };                                                                                                                                                 
                                                                                                                                                     
- export default withAuth;
+ export default withAuth;'use client';
