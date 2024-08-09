@@ -1,3 +1,5 @@
+// sr/hooks/useAuth.ts
+
 import { useEffect } from 'react'; // Import useEffect from 'react'
 import { useRouter } from 'next/router'; // Import useRouter from 'next/router'
 import useAuth from '../hooks/useAuth'; // Import useAuth from the correct path
